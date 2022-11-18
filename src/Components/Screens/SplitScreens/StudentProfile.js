@@ -1,6 +1,22 @@
-import React from 'react'
+import axios from 'axios'
+import React,{ useState } from 'react'
 import "./StudentCss.css"
 function StudentProfile() {
+  const [studentData, setStudentData] = useState([]);
+
+  const fetchData  = () => {
+    axios.get("http://127.0.0.1:8000/api/----").then(res => setStudentData(res.data.students))
+
+
+
+    /////////////////////++           is page mei abhi thora kaam bankii hai               ++/////////////////////////////
+  
+  
+  
+  }
+
+
+
   return (
     <>
    <div className="justify-center items-center min-h-screen flex w-full" style={{  margin: 0, padding:0,boxSizing: "border-box",fontFamily: 'Poppins'}}>

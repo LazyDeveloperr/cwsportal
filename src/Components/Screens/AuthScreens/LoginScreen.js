@@ -18,10 +18,10 @@ const LoginScreen = () => {
 		.then(res =>{
 			if(res.data.status){
 				swal("Boomm !", "successfully logged in...", "success")
-			}else{
-				swal("Oops","wrong email or passsword !","error");
 				localStorage.setItem("user",res.data.token)
 				localStorage.setItem("username",res.data.name)
+			}else{
+				swal("Oops","wrong email or passsword !","error");
 			}
 		})
 	}
