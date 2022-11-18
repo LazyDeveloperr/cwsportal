@@ -11,11 +11,13 @@ const RegisterScreen = () => {
 	const [ password, setPassword ] = useState()
     const [ contact, setContact ] = useState()
     const [ name, setName ] = useState()
+	const [data, setData] =  useState()
 
     const handleSubmit = (e) => {
 		e.preventDefault()
 		axios.post("http://127.0.0.1:8000/api/register",{name:name,contact:contact,email:email, password:password})
-		.then(res=> console.log(res))
+		.then(data=> setData(data))
+		console.log(data.status)
 	}
 	
   return (
@@ -46,12 +48,12 @@ const RegisterScreen = () => {
 				<i></i>
 			</div>
 			{/* <input onClick={handleSubmit} className="" type="submit" value="Register"/> */}
-			<div className="btn btn-success py-2 mt-4">Register</div>
+			<div className="btn btn-success py-2 mt-4" onClick={handleSubmit}>Register</div>
 			<div className="div text-white">
 			<div className="flex w-100">
 			<div className="text-center w-full">
 			   <span><small>Already have an account ?</small></span>
-			   <Link to="/" >
+			   <Link to="/login" >
 			   <span className='fs-5 px-2' style={{ color:"#45f3ff"}}><small>Login</small></span>
 			   </Link>
 			 </div>	

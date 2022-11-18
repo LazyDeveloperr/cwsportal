@@ -6,7 +6,7 @@ export default function CourseTitle () {
             <Grid container >
                 <Grid item >
                    <Typography variant="h5" className="py-1 mt-3" component="h5" sx={{ borderLeft:"4px solid gray" ,fontFamily:"inherit", paddingInline:"6px ", color:"#d7d7d7"}}>
-                        <h5>Our Courses</h5>
+                        <h5 id="course">Our Courses</h5>
                     </Typography>
                 </Grid>
             </Grid>

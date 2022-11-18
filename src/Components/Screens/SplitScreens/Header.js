@@ -40,19 +40,17 @@ export default function Header(props) {
       <HideOnScroll {...props}>
         <AppBar sx={{paddingInline:"160px", background: 'linear-gradient(to right, rgba(32, 40, 119, 1), rgba(55, 46, 149, 1), rgba(83, 49, 177, 1), rgba(114, 48, 205, 1),rgba(150, 41, 230, 1))'    }}>
           <Toolbar className="flex">
-          <Typography variant="h6" component="div" sx={{ flexGrow:1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow:1}}>
             <h3 style={{color:'white'}} >code with sadiq</h3>
             </Typography>
-           
-            
-            
-            <Link to="/"><Button color="inherit">Home</Button></Link>
-            <Link to="/line30"><Button color="inherit">Course</Button></Link>
-            <Link to="/"><Button color="inherit" >Online Payment</Button></Link>
-            <Link to="/apply"><Button color="warning" variant="contained">Apply for Admission</Button></Link>
-             <Link to="/login"><Button color="inherit" className="outline-0 text-white no-underline font-semibold border underline-offset-0 py-1 mx-2">Login</Button></Link>
+            <Link to="/"><Button color="inherit" className="hover:text-white hover:bg-current shadow-md shadow-black">Home</Button></Link>
+            <Button href="#course" color="inherit" className="hover:text-white hover:bg-current shadow-md shadow-black">Course</Button>
+            <Link to="/"><Button color="inherit" className="hover:text-white hover:bg-current shadow-md shadow-black" >Online Payment</Button></Link>
+            <Link to="/apply"><Button color="inherit" className="hover:text-white hover:bg-current shadow-md shadow-black">Apply for Admission</Button></Link>
+             <Link to="/login"><Button className="outline-0 text-white no-underline font-semibold shadow-md shadow-black underline-offset-0 py-1 mx-2 ">Login</Button></Link>
+             <Link to="/profile"><Button color="inherit" className="hover:text-white hover:bg-current shadow-md shadow-black">My Profile</Button></Link>
 
-
+             
           </Toolbar>
         </AppBar>
       </HideOnScroll>

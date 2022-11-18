@@ -3,7 +3,7 @@ import { Container, List, ListItem, Typography, Grid } from "@mui/material";
 export default function Footer (){
     return(
         <>
-        <Container maxWidth="" sx={{ backgroundImage:'url(./images/bgimg.png)',backgroundSize:"cover",backgroundRepeat: "no-repeat", color:"#d7d7d7",  height:"320px"}} >
+        <Container maxWidth="" sx={{ backgroundImage:'url(./images/bgimg.png)',backgroundSize:"cover",backgroundRepeat: "no-repeat", color:"#d7d7d7",  height:"340px"}} >
             <Grid container >
                 <Grid item lg={4}>
                     <Typography variant="h1" sx={{fontWeight:"lighter", marginBlockStart:"10px", fontSize:"30px", fontFamily:"sans-serif", padding:"30px", color:"white"}}>
@@ -39,7 +39,7 @@ export default function Footer (){
                     <List>
                         <ListItem disablePadding sx={{marginTop:"25px", color:"white",fontSize:"23px"}}>Location</ListItem>
                         <ListItem disablePadding sx={{marginTop:"15px", color:"white",}}>Ramavtar Market, Near Dog Hospital,
-Thana Chowk, Gandhinagar, Madhubani, Purnea - 854301</ListItem>
+                        Thana Chowk, Gandhinagar, Madhubani, Purnea - 854301</ListItem>
                         <ListItem disablePadding sx={{marginTop:"10px", color:"white",}}>+91 95 4680 5580</ListItem>
                         <ListItem disablePadding sx={{marginTop:"10px", color:"white",}}>cwspurnea@gmail.com</ListItem>
                         <ListItem disablePadding sx={{marginTop:"10px", color:"white",}}>www.codewithsadiq.com</ListItem>
